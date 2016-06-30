@@ -15,6 +15,11 @@ namespace DesignPatterns_State
             p1.TakeCap();
             p1.PutCap();
             p1.PutCap();
+            p1.CapFoward();
+            p1.CapBack();
+            p1.CapBack();
+            p1.TakeCap();
+            p1.CapFoward();
             Console.Read();
         }
     }

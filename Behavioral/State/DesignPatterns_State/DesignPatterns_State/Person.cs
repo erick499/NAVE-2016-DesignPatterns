@@ -36,5 +36,13 @@ namespace DesignPatterns_State
         {
             this.state.putCap(this);
         }
+        public void CapBack()
+        {
+            this.state.capBack(this);
+        }
+        public void CapFoward()
+        {
+            this.state.capFoward(this);
+        }
     }
 }

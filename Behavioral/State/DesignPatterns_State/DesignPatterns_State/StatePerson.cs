@@ -10,6 +10,8 @@ namespace DesignPatterns_State
     {
         public abstract void takeCap(Person person);
         public abstract void putCap(Person person);
+        public abstract void capFoward(Person person);
+        public abstract void capBack(Person person);
 
         public abstract string WhoAmI();
     }

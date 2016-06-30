@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns_Iterator
 {
-    partial class Form1
+    partial class Iterator
     {
         /// <summary>
         /// Required designer variable.

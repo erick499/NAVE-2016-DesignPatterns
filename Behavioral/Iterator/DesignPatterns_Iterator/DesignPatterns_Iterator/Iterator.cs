@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DesignPatterns_Iterator
 {
-    public partial class Form1 : Form
+    public partial class Iterator : Form
     {
-        public Form1()
+        public Iterator()
         {
             InitializeComponent();
         }

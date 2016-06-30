@@ -1,4 +1,4 @@
-# Design Pattern
-	Iterator
+# Iterator
+
 # Credits
-	Talita Canadinhas
+**[Talita Canadinhas](https://github.com/TCanadinhas)**

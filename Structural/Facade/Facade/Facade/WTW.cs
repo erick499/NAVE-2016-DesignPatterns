@@ -26,15 +26,22 @@ namespace Facade
             Stream objStream;
             objStream = wrGETURL.GetResponse().GetResponseStream();
             StreamReader objReader = new StreamReader(objStream);
-            string sLine = "";
             int i = 0;
-            while (sLine != null)
+            string sLine = objReader.ReadLine();
+            float value1 = float.Parse(sLine.Split(':')[2].Split(',')[0]);
+            float value2=0;
+            sLine = sLine.Split('}')[0].ToString();
+            sLine = sLine.Split('{')[2].ToString();
+            string[] sLine2 = new string[10000];
+            i = Int16.Parse((sLine.Split(':')).Length);
+            value2 = float.Parse(sLine.Split(':')[i].ToString());
+            /*while (sLine != null)
             {
                 i++;
                 sLine = objReader.ReadLine();
                 if (sLine != null)
                     Console.WriteLine("{0}:{1}", i, sLine);
-            }
+            }*/
             Console.ReadLine();
         }
     }

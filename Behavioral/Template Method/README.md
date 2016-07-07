@@ -8,5 +8,7 @@
  +- Email: brenoferreirarocha@gmail.com
  Name: [Carlos Eduardo](https://github.com/Cadu1337)
  +- Email: dev.carlos.farias@gmail.com
- Name: [Leonardo Moragas](https://github.com/leomthome2)
+ Name: [Leonardo Moragas](https://github.com/Leomthome)
  +- Email: leomthome2@gmail.com
+ 
+ +

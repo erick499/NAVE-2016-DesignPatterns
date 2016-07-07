@@ -30,12 +30,12 @@ namespace DesignPatterns_State
 
         public override void capFoward(Person person)
         {
-            Console.WriteLine("To Sem Boné, Não vai dar!. QUEE NÃO VAI DAR O QUE RAPAZ !!! É 13 po ? ah não é 13. Nem vai dar memo");
+            Console.WriteLine("To Sem Boné, Não da pra virar!");
         }
 
         public override void capBack(Person person)
         {
-            Console.WriteLine("To Sem Boné, Não vai dar!. QUEE NÃO VAI DAR O QUE RAPAZ !!! É 13 po ? ah não é 13. Nem vai dar memo");
+            Console.WriteLine("To Sem Boné, Não da pra virar!");
 
         }
         public override string WhoAmI()

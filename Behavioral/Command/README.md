@@ -2,17 +2,16 @@
 
 ## Command
 
-1. [Class Diagram](#Diagram)
-2. [Definition](#Definition)
-3. [Examples](#Examples)
+1. [Class Diagrams](#diagram)
+2. [Definition](#definition)
+3. [Examples](#examples)
 
 ## Definition
 
 the command pattern is a behavioral design pattern in which an object is used to encapsulate all information needed to perform an action or trigger an event at a later time. 
 
 ## Diagram
-
-<img src="http://www.dofactory.com/images/diagrams/javascript/javascript-command.jpg" width="60%" height="60%">
+<img src="http://www.macoratti.net/13/03/net_cmd1.gif" width="60%" height="60%">
 
 ## Examples
 

@@ -1,12 +1,20 @@
 # Design Pattern
 
-### Command
+## Command
 
- the command pattern is a behavioral design pattern in which an object is used to encapsulate all information needed to perform an action or trigger an event at a later time. 
+1. [Class Diagram](#installation)
+2. [Definition](#Coffescript)
+3. [Coffescript](#Coffescript)
+
+## Definition
+
+the command pattern is a behavioral design pattern in which an object is used to encapsulate all information needed to perform an action or trigger an event at a later time. 
+
+## Diagram
 
 <img src="http://www.dofactory.com/images/diagrams/javascript/javascript-command.jpg" width="60%" height="60%">
 
-### Coffescript example
+## Coffescript
   The following code is an implementation of Command pattern in Coffeescript
 
 ```coffeescript
@@ -47,6 +55,6 @@ s.storeAndExecute(switchUp)
 s.storeAndExecute(switchDown)
 ```
 
-### Credits
+## Credits
 - Name: [Yago Azedias](https://github.com/yagoazedias)
 - Email: yagoazedias@gmail.com

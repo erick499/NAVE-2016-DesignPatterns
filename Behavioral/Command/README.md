@@ -2,9 +2,9 @@
 
 ## Command
 
-1. [Class Diagram](#installation)
-2. [Definition](#Coffescript)
-3. [Coffescript](#Coffescript)
+1. [Class Diagram](#Diagram)
+2. [Definition](#Definition)
+3. [Examples](#Examples)
 
 ## Definition
 
@@ -14,7 +14,8 @@ the command pattern is a behavioral design pattern in which an object is used to
 
 <img src="http://www.dofactory.com/images/diagrams/javascript/javascript-command.jpg" width="60%" height="60%">
 
-## Coffescript
+## Examples
+
   The following code is an implementation of Command pattern in Coffeescript
 
 ```coffeescript

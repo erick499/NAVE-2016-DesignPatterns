@@ -16,20 +16,23 @@ namespace Visitor
         static void Main(string[] args)
         {
             ShoppingCart cart = new ShoppingCart();
-            cart.Add(new Book(9f, 1f));
-            cart.Add(new Book(4f, .2f));
-            Console.WriteLine("Total Postage for Cart: " + cart.CalculatePostage());
+            Console.WriteLine("Shopping Cart created\n---------------------");
+
+            cart.Add(new Book(9f, 3f));
+            cart.Add(new Book(4f, 1f));
+
+            Console.WriteLine("\nTotal Postage for Cart: " + cart.CalculatePostage());
             Console.ReadKey();
         }
     }
 
     //Interface dos Elementos
-    public interface Visitable{
-        void Accept(Visitor visitor);
+    public interface IVisitable{
+        void Accept(IVisitor visitor);
     }
 
     //Elemento
-    public class Book : Visitable{
+    public class Book : IVisitable{
         private float price;
         private float weight;
     
@@ -39,7 +42,7 @@ namespace Visitor
         }
     
         //Aceita o Visitor
-        public void Accept(Visitor visitor) {
+        public void Accept(IVisitor visitor) {
             visitor.Visit(this);
         }
         public float GetPrice() {
@@ -50,20 +53,23 @@ namespace Visitor
         }
     }
 
-    public interface Visitor{
+    public interface IVisitor{
         //Visita os Elementos (um overload para cada)
         void Visit(Book book);
     }
 
-    public class PostageVisitor : Visitor{
+    public class PostageVisitor : IVisitor{
         private float price;
     
         //Calcula o frete do livro
         public void Visit(Book book) {
             //Frete grátis para preços maiores que 10
+            float postage = 0;
             if(book.GetPrice() < 10f) {
-                price += book.GetWeight() * 2;
+                postage = book.GetWeight() * 2;
             }
+            price += postage;
+            Console.WriteLine("Book Postage --> $" + postage);
         }
     
         //Retorna o valor do frete
@@ -73,19 +79,22 @@ namespace Visitor
     }
 
     public class ShoppingCart{
-        public List<Visitable> items = new List<Visitable>();
+        public List<IVisitable> items = new List<IVisitable>();
 
-        public void Add(Visitable item)
+        public void Add(IVisitable item)
         {
+            if (item.GetType().Equals(typeof(Book)))
+                Console.WriteLine("Added Book to Cart --> Price: $" + (item as Book).GetPrice() + " | Weight: " + ((item as Book).GetWeight() * 100) + "g");
             items.Add(item);
         }
 
         public float CalculatePostage() {
+            Console.WriteLine("\nCalculating Postage\n-------------------");
             //Cria um visitor
             PostageVisitor visitor = new PostageVisitor();
         
             //Calcula o frete de cada item
-            foreach(Visitable item in items) {
+            foreach(IVisitable item in items) {
                 item.Accept(visitor);
             }
         

@@ -17,11 +17,17 @@ Em alguns códigos é possível ver alguns sinôimos que substituem a palavra co
 É necessário em momentos onde deve-se emitir informações ou requerimentos para o objeto sem nada sabe sobre a operação que está sendo solicitada ou mesmo sobre seu receptor. 
 ## Diagrama
 <img src="http://www.macoratti.net/13/03/net_cmd1.gif" width="60%" height="60%">
-- Command: Declaramento de uma variável
+
+- **Command**: Declara uma interface para a execução de uma operação.
+- **ConcreteCommand**: Define uma vinculação entre um objeto, um Receiver e uma ação. E também implementa “execute” através da invocação da operação correspondente no Receiver.
+- **Client**: Cria um objeto ConcreteCommand e estabelece o seu receptor.
+- **Invoker**: Solicita ao Command a execução da solicitação
+- **Receiver**: Sabe como executar as operações associadas a uma solicitação. Qualquer classe pode funcionar como um Receiver.
 
 ## Exemplos
 
   O código a seguir é uma implementação do padrão do command em Java
+
 ```java
   public class portao {
       public final static void int ABERTO = 0;
@@ -142,3 +148,4 @@ s.storeAndExecute(switchDown)
 ## Créditos
 - Name: [Yago Azedias](https://github.com/yagoazedias)
 - Email: yagoazedias@gmail.com
+- Referência: http://www.csi.uneb.br/padroes_de_projetos/command_2.html

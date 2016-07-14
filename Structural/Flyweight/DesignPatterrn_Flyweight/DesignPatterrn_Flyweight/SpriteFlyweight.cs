@@ -11,6 +11,6 @@ namespace DesignPatterrn_Flyweight
     public abstract class ISpriteFlyweight //Em C#, utilizamos "I" antes do nome da classe para indicar que ela é uma Interface!
     {
         public abstract void desenharImagem(Ponto ponto);
-        public abstract string desenharNoConsole(Ponto ponto);
+        public abstract string desenharNoConsole(Ponto ponto);//Operação com estado extrínsseco.
     }
 }

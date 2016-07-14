@@ -17,16 +17,15 @@ namespace DesignPatterrn_Flyweight
         {
             imagem = new Imagem(nomeDaImagem);
         }
-
-
-        public override void desenharImagem(Ponto ponto)
+        
+        public override void desenharImagem(Ponto ponto) 
         {
             imagem.desenharImagem();
             Debug.WriteLine("no ponto (" + ponto.x + "," + ponto.y + ")!");
         }
 
-
-        public override string desenharNoConsole(Ponto ponto)
+        //Operação contendo estado extrínsico e intrísseco.
+        public override string desenharNoConsole(Ponto ponto)//Devemos usar override para sobreescrever o método abstrato da interface.
         {
             string s = imagem.desenharNoConsole();
             return s + " no ponto (" + ponto.x + "," + ponto.y + ")!\n";

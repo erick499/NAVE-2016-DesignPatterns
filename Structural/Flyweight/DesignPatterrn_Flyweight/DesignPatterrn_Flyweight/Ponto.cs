@@ -13,6 +13,7 @@ namespace DesignPatterrn_Flyweight
     {
         public int x, y;
 
+        //Um "vetor" que guarda as coordenadas para a imagem.
         public Ponto(int x, int y)
         {
             this.x = x;

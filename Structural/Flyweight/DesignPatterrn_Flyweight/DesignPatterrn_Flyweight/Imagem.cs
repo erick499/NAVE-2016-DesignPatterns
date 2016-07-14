@@ -23,6 +23,7 @@ namespace DesignPatterrn_Flyweight
             Debug.WriteLine(nomeDaImagem + " desenhada!");
         }
 
+        //Operação para desenhar a "imagem".
         public string desenharNoConsole()
         {
             return "Imagem " + nomeDaImagem + " desenhada";

@@ -1,6 +1,5 @@
-# Design Pattern
+# State
 
-### State
 #### Check list
 1 - Identify an existing class, or create a new class, that will serve as the "state machine" from the client's perspective. That class is the "wrapper" class.
 

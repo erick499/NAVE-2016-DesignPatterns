@@ -1,4 +1,4 @@
-# Design Patterns (NAVE 3003.16)![Logo](https://img.shields.io/badge/Design-Patterns-blue.svg)![Stage](https://img.shields.io/badge/Stage-Developing-red.svg)
+# Design Patterns (NAVE 3003.16) ![Logo](https://img.shields.io/badge/Design-Patterns-blue.svg)![Stage](https://img.shields.io/badge/Stage-Developing-red.svg)
 
 ## Intro
 ####English:
